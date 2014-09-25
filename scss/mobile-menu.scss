@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+html, body { min-height: 100%; 
+	.main-nav-check {
+		display: none;
+	}
+	#main-nav-check:checked + #main-nav {
+		float: right;
+		width: 30%;
+	}
+	#main-nav-check:checked ~ .page-wrap {
+		float: right;
+		width: 70%;
+		.open-menu {
+	 		display: none; 
+		}
+		.close-menu {
+	  	display: block;
+	  }
+		.main-header {
+			width: 70%;
+		    left: 30%;
+		}
+	}
+	.main-nav {
+		position: fixed;
+		top: 0;
+		width: 0;
+		height: 100%;
+		background: #3B3B3B;
+		overflow: hidden;
+		transition: width 0.3s ease;
+  		a {
+  			margin-left: -40px;
+		    display: block;
+		    background: linear-gradient(#3E3E3E, #383838);
+		    border-top: 1px solid #484848;
+		    border-bottom: 1px solid #2E2E2E;
+		    color: white;
+		    padding: 10px;
+		    &:hover, &:focus {
+		    	background: linear-gradient(#484848, #383838);
+			}
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 34px;
+			background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+		}
+		a { text-decoration: none; }
+	}
+	.page-wrap {
+		float: right;
+		width: 100%;
+		transition: width 0.3s ease;
+		.main-header { 
+			z-index: 2;
+			padding: 5px;
+			text-align: center;
+			color: white;
+			text-shadow: #222 0px -1px 1px;
+			position: fixed;
+			width: 100%;
+			left: 0;
+			background: black;
+			transition: all 0.3s ease;
+			.toggle-menu {
+				//Menu knappens position
+				position: absolute;
+				padding: 0px;
+				right: 20px;
+				top: 20px;
+				color: #27ff6b;
+				font-size: 32px;
+				cursor: pointer;
+				
+			}
+			.menu-980{
+					display:none;
+				}
+		}
+		.content {
+	 		padding: 100px 20px 20px 20px;
+		}
+		.close-menu {
+			display: none;
+		}
+	}
+}
+.desktopMenuWrap{
+	display:none;
+}
+.page_item{
+	width:300px;
+}
+html .main-nav, 
+body .main-nav { 
+z-index: 100;
+}
+
+html #main-nav-check:checked + #main-nav, body #main-nav-check:checked + #main-nav {
+float: none;
+}
+
+html #main-nav-check:checked ~ .page-wrap, body #main-nav-check:checked ~ .page-wrap {
+ width:100%;
+}
+
+html #main-nav-check:checked ~ .page-wrap .main-header, body #main-nav-check:checked ~ .page-wrap .main-header {
+  left: 0; 
+  width: 100%;
+}

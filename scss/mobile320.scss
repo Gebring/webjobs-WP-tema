@@ -1,0 +1,200 @@
+@import "mobile-menu";
+@import "createAd";
+@import "sliderAds";
+@import "singlePost";
+//@import "_vars-typeplate.scss";
+//@import "_typeplate.scss";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*****************************************************/
+/********************* index.php *********************/
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #ada9a9;
+	margin: 0 auto;
+	a {
+		text-decoration: none;
+	}
+	h5 {
+		text-align: center;
+	}
+	
+	.page-wrap {
+		.main-header {
+			#main-headline {
+				font-size: 2rem;
+				font-weight: 900;
+				color: white;
+				margin-left: 20px;
+				text-align: left;
+				a {
+					text-decoration: none;
+				}	
+			}
+		}
+		.presentationWrap {
+			height:280px;
+			margin-top: 120px !important;	
+			background: url(../img/Mood.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+			.textwidget{
+				position:relative;
+				width:305px;
+				color:rgba(255, 255, 255, 1);
+	  			font-size:30px;
+	  			margin: 0 auto;
+	  			background: rgba(0, 0, 0, 0.3);
+	  			border-radius:10px;
+	  			padding:0 50px 0 5px;
+	  		}
+			
+		}
+		.latestAdsWrap {
+			
+			.swipe {
+				.swipe-wrap {
+					background-color: white;
+					opacity:0.8;
+					.ads {
+						text-align: center;
+						z-index: 1;
+						color: black;
+						
+						a {
+							color: black;
+						}
+						.date{
+							color:black;
+							text-align:left;
+						}
+						p{
+							text-align:left;
+							padding:0px 10px 0px 10px;
+						}
+						.titleFrame {
+
+
+							border: 2px solid #ff6600;
+							margin-top: 0;
+							background-color: #ff6600;
+							.blogTitle {
+								color: black;
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+		.inlineLink {
+			margin-top: 0px;
+			float: left;
+		}
+		.allAds-wrap {
+			height: 100px;
+			margin: 10px 0 0 0;
+			padding: 0;
+			.headlineWrap {
+				height: 100px;
+				color: white;
+				background-color: black;
+				width: 70%;
+				h5{
+					font-size:1.1em;
+					padding-top:10px;
+				}
+			}
+			.pinkSearchIcon {
+				padding: 5px;
+				height: 100px;
+				background-color: #ff66ab;
+				width: 30%;
+				.img-wrap {
+					text-align: center;
+					.arrows {
+						width: 70%;
+						padding-top:10px;
+					}					
+				}
+
+			}
+		} 
+		.createAd-wrap {
+			height: 100px;
+			margin-top:10px;
+			color:white;
+			h5{
+				font-size:1.1em;
+				padding-top:15px;
+			}
+
+			.greenAdIcon {
+				padding: 5px;
+				height: 100px;
+				background-color: #27ff6b;
+				width: 30%;
+				.img-wrap {
+					text-align: center;
+					.arrows {
+						width: 70%;
+						padding-top:10px;
+					}
+				}
+			}
+			.headlineWrap {
+				background-color: black;
+				height: 100%;
+				width: 70%;
+
+			}
+		}
+	}
+}
+/*****************************************************/
+/******************** All-ads.php ********************/
+.allAdsLoop {
+	position:relative;
+	top: 90px;
+	background: url(../img/Mood.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	.ads{
+		width: 360px;
+		margin: 0 auto;
+  		padding-top: 20px;
+
+		.titleFrame {
+			background-color:white;
+			opacity:0.8;
+			text-align:center;
+			border-radius:10px;
+			h1{
+				color:black;
+			}
+			p {
+			color:black;
+			margin: 0 auto;
+			width: 90%;	
+			text-align: left;
+			}
+			.date{
+				margin-top:0px;
+				background-color:#ff6600;
+				font-size:30px;
+				width: 100%;
+				border-radius:10px 10px 0 0;
+			}
+			.blogContent {
+			
+			}
+			
+		}
+	}
+}
+
+

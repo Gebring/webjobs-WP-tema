@@ -1,0 +1,49 @@
+ .menu-header{
+ 	display:none !important;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ .mobileWrap {
+ 	display: none;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ .main-nav {
+ 	display: none;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ .main-nav-check {
+ 	display: none;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ 
+ .desktopMenuWrap {
+	position: fixed;
+	height:90px;
+ 	top: 0px;
+ 	padding-left:30px;
+ 	width: 100%;
+ 	background-color: black;
+ 	z-index:100;
+ 	a, .menu-980 {
+ 		display: inline-block;
+ 	}
+ 	a{
+ 		color:white;
+
+ 	}
+ 	.menu-980{
+ 		padding-top:25px;
+ 		float:right;
+ 		padding-right:50px;
+ 		
+ 		.menu ul li{
+ 			display:inline-block;
+ 			padding-left:20px;
+ 			font-size:18px;
+ 		}
+ 		
+ 	}
+ }
